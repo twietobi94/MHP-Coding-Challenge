@@ -1,7 +1,7 @@
 {
-  "name": "minimal-webpack-react",
+  "name": "mhp-coding-challenge",
   "version": "2.0.0",
-  "description": "Boilerplate for react and webpack",
+  "description": "SPA to discover the houses of Game of Thrones",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --open",
