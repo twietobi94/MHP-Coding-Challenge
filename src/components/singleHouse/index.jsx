@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import style from './singleHouse.css';
 
+// This Component represents a single Listitem of a House
 export default class SingleHouse extends React.Component {
   constructor(props) {
     super(props);

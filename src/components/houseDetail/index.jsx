@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/*
+ * Detail Component of the page
+ * It displays name, words, region and the year founded of a single house
+ */
 export default class HouseDetail extends React.Component {
   constructor(props) {
     super(props);

@@ -3,6 +3,7 @@ import React from 'react';
 import SingleHouse from '../singleHouse';
 import HouseDetail from '../houseDetail';
 
+// Overview of all existing houses in GoT
 export default class Houses extends React.Component {
   constructor(props) {
     super(props);
@@ -13,10 +14,15 @@ export default class Houses extends React.Component {
     };
   }
 
+  // Initial call for the first 10 houses
   componentDidMount() {
     this.getHouses(1);
   }
 
+  /**
+   * This function gets 10 houses based on the current pagination count
+   * @param {*} count
+   */
   getHouses(count) {
     fetch(
       `https://www.anapioficeandfire.com/api/houses?page=${count}&pageSize=10`,
@@ -31,6 +37,10 @@ export default class Houses extends React.Component {
       });
   }
 
+  /**
+   * This function calls the getHouses() in order to crawl the next 10 houses
+   * @param {*} count
+   */
   nextHouses(count) {
     let newCount = count;
     newCount += 1;
@@ -44,6 +54,10 @@ export default class Houses extends React.Component {
     );
   }
 
+  /**
+   * This function calls the getHouses() in order to crawl the previous 10 houses
+   * @param {*} count
+   */
   previousHouses(count) {
     if (count !== 1) {
       let newCount = count;
@@ -59,6 +73,10 @@ export default class Houses extends React.Component {
     }
   }
 
+  /**
+   * This function selects a house to show further details
+   * @param {*} house
+   */
   pickHouse(house) {
     this.setState({
       selectedHouse: house,

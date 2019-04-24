@@ -1,8 +1,10 @@
 import React from 'react';
 
+// imports for header images
 const MHP = require('../../../assets/MHP_LOGO.png');
 const GOT = require('../../../assets/GOT.png');
 
+// Header component of the page
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
