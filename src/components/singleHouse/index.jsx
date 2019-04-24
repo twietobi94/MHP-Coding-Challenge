@@ -19,7 +19,9 @@ export default class SingleHouse extends React.Component {
       >
         <i
           className={
-            house.diedOut.length === 0 ? 'fas fa-home' : 'fas fa-house-damage'
+            house.diedOut.length === 0
+              ? 'fas fa-home fa-lg'
+              : 'fas fa-house-damage fa-lg'
           }
         />
         <span className={style['house-name']}> {house.name} </span>

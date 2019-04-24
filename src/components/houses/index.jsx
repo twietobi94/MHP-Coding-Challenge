@@ -77,6 +77,7 @@ export default class Houses extends React.Component {
                   <li className="page-item">
                     <a
                       className="page-link"
+                      style={{ cursor: 'pointer' }}
                       onClick={() => this.previousHouses(count)}
                       onKeyPress={null}
                       role="button"
@@ -91,6 +92,7 @@ export default class Houses extends React.Component {
                 <li className="page-item">
                   <a
                     className="page-link"
+                    style={{ cursor: 'pointer' }}
                     onClick={() => this.nextHouses(count)}
                     onKeyPress={null}
                     role="button"
